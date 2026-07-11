@@ -8,14 +8,13 @@ import pandas as pd
 # ======================================================
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_DIR = os.path.join(BASE_DIR, "models")
 
 model = joblib.load(
-    os.path.join(MODEL_DIR, "smart_grid_model.pkl")
+    os.path.join(BASE_DIR, "smart_grid_model.pkl")
 )
 
 label_encoder = joblib.load(
-    os.path.join(MODEL_DIR, "label_encoder.pkl")
+    os.path.join(BASE_DIR, "label_encoder.pkl")
 )
 
 
