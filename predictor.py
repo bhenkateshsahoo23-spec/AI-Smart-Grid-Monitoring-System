@@ -1,11 +1,18 @@
+import os
 import joblib
 import pandas as pd
 
-# Load trained model
-model = joblib.load("models/smart_grid_model.pkl")
+# Base directory
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Load label encoder
-encoder = joblib.load("models/label_encoder.pkl")
+# Load model and encoder
+model = joblib.load(
+    os.path.join(BASE_DIR, "smart_grid_model.pkl")
+)
+
+encoder = joblib.load(
+    os.path.join(BASE_DIR, "label_encoder.pkl")
+)
 
 
 def predict_fault(voltage, current, frequency, power, power_factor, temperature):
