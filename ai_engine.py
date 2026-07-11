@@ -7,7 +7,7 @@ import pandas as pd
 # Load Model
 # ======================================================
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 
 model = joblib.load(
@@ -17,6 +17,7 @@ model = joblib.load(
 label_encoder = joblib.load(
     os.path.join(MODEL_DIR, "label_encoder.pkl")
 )
+
 
 # ======================================================
 # Feature Names
