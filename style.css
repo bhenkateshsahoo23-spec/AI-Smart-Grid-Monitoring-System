@@ -1,0 +1,47 @@
+/* Main Background */
+.stApp {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+}
+
+/* Metric Cards */
+[data-testid="metric-container"] {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    border-left: 6px solid #0066cc;
+}
+
+/* Buttons */
+.stButton>button {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #0066cc;
+    color: white;
+    font-weight: bold;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #0f172a;
+}
+
+section[data-testid="stSidebar"] * {
+    color: white;
+}
+
+/* Title */
+h1 {
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Tables */
+table {
+    border-radius: 10px;
+}
+
+/* Charts */
+.js-plotly-plot {
+    border-radius: 15px;
+}
